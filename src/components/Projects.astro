@@ -7,6 +7,7 @@ import html from "./icons/html.astro";
 import JavaScript from "./icons/JavaScript.astro";
 import AstroI from "./icons/AstroI.astro";
 import CSS from "./icons/CSS.astro";
+import Python from "./icons/Python.astro";
 
 const TAGS = {
   HTML: {
@@ -34,6 +35,11 @@ const TAGS = {
     class: "bg-sky-500 text-white",
     icon: CSS,
   },
+  PYTHON: {
+    name: "Python",
+    class: "bg-sky-950 text-white",
+    icon: Python,
+  },
 };
 const PROJECTS = [
   {
@@ -44,6 +50,15 @@ const PROJECTS = [
     github: "https://github.com/SylenthMen/consultora-proGestion-bys-asociados",
     image: "/prj4.webp",
     tags: [TAGS.HTML, TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.ASTRO],
+  },
+  {
+    title: "Chatea con un PDF",
+    description:
+      "Sitio web que permite a los usuarios subir un archivo PDF y extraer el texto del documento para ser utilizado en un chatbot.",
+    link: "https://chateapdf.sylenthmen.site/",
+    github: "https://github.com/SylenthMen/Landing-ChatPDf",
+    image: "/prj5.webp",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.PYTHON],
   },
   {
     title: "Skull Island Records - Record Label",
