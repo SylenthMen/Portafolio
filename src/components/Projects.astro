@@ -8,6 +8,7 @@ import JavaScript from "./icons/JavaScript.astro";
 import AstroI from "./icons/AstroI.astro";
 import CSS from "./icons/CSS.astro";
 import Python from "./icons/Python.astro";
+import NextJS from "./icons/NextJS.astro";
 
 const TAGS = {
   HTML: {
@@ -40,8 +41,29 @@ const TAGS = {
     class: "bg-sky-950 text-white",
     icon: Python,
   },
+  NEXT: {
+    name: "Next.js",
+    class: "bg-slate-950 text-white",
+    icon: NextJS,
+  },
 };
 const PROJECTS = [
+  {
+    title: "Farmacia Veterinaria Dr. Canino",
+    description:
+      "Pagina oficial que permite a los usuarios ver los productos que vende y ponerse en contacto con el personal.",
+    link: "https://farmaciaveterinariadrcanino.com/",
+    image: "/prj8.webp",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
+  },
+  {
+    title: "Picteligence",
+    description:
+      "Aplicacion para crear imagenes de cualquier tipo con inteligencia artificial",
+    link: "https://picteligence.site/",
+    image: "/prj7.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
   {
     title: "GALERIA DE LINKS",
     description:
@@ -105,9 +127,8 @@ const PROJECTS = [
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
-              alt="Recién llegado vs 5 años en Nueva Zelanda"
+              alt="una imagen bonita"
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-              loading="lazy"
               src={image}
             />
           </div>
@@ -138,13 +159,13 @@ const PROJECTS = [
               {github && (
                 <LinkButton href={github}>
                   <GitHub class="size-6" />
-                  Code
+                  Codigo
                 </LinkButton>
               )}
               {link && (
                 <LinkButton href={link}>
                   <Link class="size-4" />
-                  Preview
+                  Ir al sitio
                 </LinkButton>
               )}
             </footer>
